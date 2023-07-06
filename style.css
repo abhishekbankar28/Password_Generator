@@ -1,0 +1,100 @@
+body{
+    background-color : #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    /* padding:5vmin; */
+  }
+  
+  p{
+    margin: 0;
+    text-align: center;
+  }
+  
+  img{
+    width:15vmin;
+  }
+  
+  .container{
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: #332940;
+    padding: 10vmin;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    max-width: 60vmin;
+    min-height: 60vmin; 
+   animation-name: rotate;
+   animation-iteration-count: 1;
+   animation-duration: 1.7s;
+   
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: scale(0.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .container p:nth-child(3){
+    margin: 2vmin;
+    font-size: 2vmin;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.697);
+    background-color:rgb(115, 34, 190);
+  padding:2vmin;
+  }
+  
+  label{
+    display: block;
+    margin: 2vmin;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.626);
+    padding:1vmin;
+ }
+  
+  input{
+    font-size:4vmin; cursor: pointer;
+    width: 10vmin;  border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  button{
+    font-size:4vmin;
+    padding:2vmin;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.468);
+  }
+  
+  button:hover{
+    font-size:4vmin;
+    padding:2vmin;
+    border-radius: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color:#9900FF;
+    transform: scale();
+  }
+
+  input[type=checkbox] {
+    margin: 4px;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+    }
+  input[type=number] {
+    margin: 5px;
+    line-height: normal;
+    width: 60px;
+    height: 35px;
+    }
