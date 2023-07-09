@@ -67,7 +67,7 @@ function generateanotherpass() {
 
   const div = document.getElementById('containerdata');
   div.innerHTML = `<p>PASSWORD GENERATOR <img src="password.png"></img></p><form>
-  <label >Password Length :<input type="numbers" id="passlength"></label>
+  <label >Password Length :<input type="number" id="passlength"></label>
   <label>Capital Alphabet :<input type="checkbox"  value="yes" id="capital"></label>
   <label>Small Alphabet :<input type="checkbox" value="yes" id="small"></label>
   <label>Special Characters :<input type="checkbox" value="yes" id="special"></label>
