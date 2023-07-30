@@ -1,7 +1,7 @@
 const capitalCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numbers = '0123456789';
 const smallCharacters = 'abcdefghijklmnopqrstuvwxyz';
-const specialcharacters = '!@#$%^&*';
+const specialCharacters = '!@#$%^&*';
 
 function generatepass() {
   let requeststring = '';
@@ -28,7 +28,7 @@ function generatepass() {
           requeststring += smallCharacters;
         }
         if(Sc){
-            requeststring += specialcharacters;
+            requeststring += specialCharacters;
         }
         if (N) {
           requeststring += numbers;
@@ -39,7 +39,7 @@ function generatepass() {
         }
         return result;
       }
-      passworddisplay(generatedpass);
+      passwordDisplay(generatedpass);
     } else {
 
       if(PL === ''){
@@ -53,7 +53,7 @@ function generatepass() {
 }
 
 
-function passworddisplay(generatedpass) {
+function passwordDisplay(generatedpass) {
 
   const div = document.getElementById('containerdata');
   div.innerHTML = `<p>PASSWORD GENERATOR <img src="password.png"></img></p>
